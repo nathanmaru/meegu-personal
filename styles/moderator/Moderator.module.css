@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700&family=Varela+Round&display=swap");
+.container {
+	/* background-color: #ddecfa; */
+	display: grid;
+	grid-template-columns: minmax(auto, 1300px);
+	padding: 20px;
+	font-family: "Varela Round", sans-serif;
+}
+
+.headOne {
+	/* background-color: #7c7c7c; */
+	display: grid;
+	grid-template-columns: 3fr 0.5fr;
+	gap: 20px;
+}
+
+.parent {
+	padding: 20px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 20px;
+}
+
+.item {
+	padding: 10px;
+	background-color: white;
+}
+
+.card {
+	box-shadow: 0 0 2.4em rgba(224, 224, 224, 0.301);
+	padding: 25px;
+	border-top-right-radius: 60px;
+	border: 2px solid rgba(221, 220, 220, 0.61);
+	color: #7c7c7c;
+	cursor: pointer;
+	transition: 0.3s;
+	background-color: #ffffff;
+}
+
+.card .cardImg {
+	width: 5em;
+	height: 5em;
+	padding: 0.5em;
+	border-radius: 50%;
+	margin: 0 auto 5px auto;
+}
+
+.card:hover .cardImg {
+	transform: scale(1.15);
+}
+
+.infoCover {
+	height: 12rem;
+	border: 2px solid #d3d3d3bb;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	padding: 10px;
+}
+
+.infoLayout {
+	/* background-color: red; */
+	height: 80px;
+	display: grid;
+	grid-template-columns: 0.4fr 3fr 0.2fr;
+	gap: 10px;
+	padding: 5px;
+	border: 2px solid #d3d3d3bb;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	/* border-width: 0px 2px 2px 2px;
+	border-style: solid;
+	border-color: #d3d3d3bb; */
+	margin-bottom: 60px;
+}
+
+.detailsLayout {
+	/* background-color: rgb(48, 45, 42); */
+	display: grid;
+	grid-template-columns: 2.5fr 1fr;
+	gap: 20px;
+}
+
+.deptCard {
+	border: 2px solid rgba(180, 180, 180, 0.61);
+	color: #6e6e6e;
+	padding: 5px 15px 5px 15px;
+	border-radius: 10px;
+	font-size: 15px;
+}
+
+.articleCard {
+	border: 2px solid rgba(39, 37, 37, 0.61);
+	color: #7c7c7c;
+	border-radius: 10px;
+	padding: 10px;
+	/* width: 80%; */
+}
+
+.articleCardFooter {
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	gap: 20px;
+}
+
+.resourceCard {
+	border: 2px solid rgba(221, 220, 220, 0.61);
+	color: #7c7c7c;
+	cursor: pointer;
+	transition: 0.3s;
+	background-color: #ffffff;
+	padding: 20px;
+	gap: 10px;
+	border-radius: 15px;
+}
+
+.resourceCard .resourceImg {
+	width: 80px;
+	display: flex;
+	align-items: center;
+}
+
+.resourceCard:hover .resourceImg {
+	transform: scale(1.15);
+}
+
+.peopleParent {
+	padding: 10px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 20px;
+}
+
+.peopleCard {
+	border: 2px solid rgba(134, 134, 134, 0.61);
+	color: #7c7c7c;
+	padding: 10px;
+	border-radius: 15px;
+	display: grid;
+	grid-template-columns: 0.5fr 3fr;
+	gap: 10px;
+}
+
+.subscriptionLayout {
+	/* background-color: cadetblue; */
+	padding: 5px;
+	display: grid;
+	grid-template-columns: 1.5fr 3fr;
+	gap: 10px;
+}
+
+.subscriptionCard {
+	/* border: 2px solid rgba(134, 134, 134, 0.61); */
+	box-shadow: 0 1em 1em rgb(121, 185, 238);
+	color: #7c7c7c;
+	padding: 15px 20px;
+	border-radius: 15px;
+	background: linear-gradient(
+		90deg,
+		rgba(2, 0, 36, 1) 0%,
+		rgba(0, 212, 255, 1) 100%
+	);
+}
+
+@media screen and (max-width: 480px) {
+	.parent {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 10px;
+	}
+
+	.chips {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 5px;
+	}
+}

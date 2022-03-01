@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700&family=Varela+Round&display=swap");
+.container {
+	/* background-color: #ddecfa; */
+	display: grid;
+	grid-template-columns: minmax(auto, 1300px);
+	padding: 20px;
+	font-family: "Varela Round", sans-serif;
+}
+
+.parent {
+	padding: 20px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 20px;
+}
+
+.parentTwo {
+	padding: 20px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+}
+
+.item {
+	padding: 10px;
+	background-color: white;
+}
+
+.card {
+	box-shadow: 0 0 2.4em rgba(224, 224, 224, 0.301);
+	padding: 25px;
+	border-top-right-radius: 60px;
+	border: 2px solid rgba(221, 220, 220, 0.61);
+	color: #7c7c7c;
+	cursor: pointer;
+	transition: 0.3s;
+	background-color: #ffffff;
+}
+
+.cardTwo {
+	border: 2px solid rgba(221, 220, 220, 0.61);
+	color: #7c7c7c;
+	cursor: pointer;
+	transition: 0.3s;
+	background-color: #ffffff;
+	padding: 10px;
+	gap: 10px;
+}
+
+.contactCard {
+	/* border-width: 0 0 2px 0;
+	border-style: solid;
+	border-color: rgba(221, 220, 220, 0.61); */
+	color: #7c7c7c;
+	cursor: pointer;
+	border-radius: 15px;
+	transition: 0.5s;
+	padding: 4px;
+}
+
+.cardTwo .cardTwoImg {
+	display: flex;
+	align-items: center;
+}
+
+.card .cardImg {
+	width: 5em;
+	height: 5em;
+	padding: 0.5em;
+	border-radius: 50%;
+	margin: 0 auto 5px auto;
+}
+
+.card:hover .cardImg {
+	transform: scale(1.15);
+}
+
+.cardTwoCard:hover .cardTwoImg {
+	transform: scale(1.15);
+}
+
+.contactCard:hover {
+	/* border-left: 5px solid rgb(0, 61, 131); */
+	border-radius: 15px;
+	background-color: rgb(233, 233, 233);
+	/* transform: scale(1.15); */
+}
+
+.chips {
+	/* background-color: #7c7c7c; */
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	gap: 10px;
+}
+
+.chipItem:nth-child(1) {
+	font-size: 1.1rem;
+	grid-column: span 2;
+	grid-row: span 2;
+	display: grid;
+	align-content: center;
+	padding: 10px;
+}
+
+.layout {
+	display: grid;
+	grid-template-columns: 1fr 2.5fr;
+	grid-template-areas:
+		"header header"
+		"contacts messages";
+}
+
+.messages {
+	grid-area: messages;
+	padding: 20px;
+	min-height: 570px;
+	max-height: 570px;
+	border: 2px solid rgba(216, 216, 216, 0.692);
+	border-radius: 15px;
+}
+
+.contacts {
+	grid-area: contacts;
+	min-height: 570px;
+	max-height: 570px;
+	overscroll-behavior-y: contain;
+	padding: 10px;
+}
+
+.contactDetail {
+	display: grid;
+	grid-template-columns: 1fr 2.5fr;
+	grid-area: "image details";
+	column-gap: 5px;
+}
+
+.contactImg {
+	grid-area: image;
+}
+
+.details {
+	grid-area: details;
+}
+
+.messageHead {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+}
+
+.convoLayout {
+	min-height: 480px;
+	max-height: 480px;
+	display: grid;
+	grid-template-rows: 2.5fr 0.8fr;
+	gap: 20px;
+}
+
+.inputLayout {
+	border-top: 3px solid gray;
+	display: grid;
+	grid-template-columns: 3fr 0.3fr;
+	gap: 5px;
+}
+
+.convoCard {
+	color: #7c7c7c;
+	cursor: pointer;
+	border-radius: 15px;
+	transition: 0.5s;
+	padding: 4px;
+	margin-bottom: 10px;
+}
+
+.convoDetail {
+	display: grid;
+	grid-template-columns: 0.3fr 2.5fr;
+	grid-area: "image details";
+}
+
+.infoCover {
+	height: 12rem;
+	border: 2px solid #d3d3d3bb;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	padding: 10px;
+}
+
+.infoLayout {
+	/* background-color: red; */
+	height: 80px;
+	display: grid;
+	grid-template-columns: 0.4fr 3fr 0.2fr;
+	gap: 10px;
+	padding: 5px;
+	border: 2px solid #d3d3d3bb;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	/* border-width: 0px 2px 2px 2px;
+	border-style: solid;
+	border-color: #d3d3d3bb; */
+	margin-bottom: 60px;
+}
+
+@media screen and (max-width: 480px) {
+	.parent {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 10px;
+	}
+
+	.chips {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 5px;
+	}
+}

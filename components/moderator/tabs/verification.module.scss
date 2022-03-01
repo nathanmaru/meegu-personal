@@ -1,0 +1,28 @@
+.verificationLayout {
+	// background-color: bisque;
+	margin-top: 60px;
+}
+
+.verificationItem {
+	// background-color: aqua;
+	// margin-top: 20px;
+	margin-bottom: 100px;
+
+	.header {
+		color: rgb(154, 200, 243);
+		font-size: 18px;
+		font-weight: 600;
+		letter-spacing: 1px;
+	}
+	.body {
+		color: rgb(211, 211, 211);
+	}
+}
+
+@media screen and (min-width: 980px) {
+	.verificationLayout {
+		display: grid;
+		grid-template-columns: 1fr 3fr;
+		gap: 20px;
+	}
+}

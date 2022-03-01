@@ -1,0 +1,68 @@
+@function color($color-name) {
+	@return var(--color-#{$color-name});
+}
+@mixin glassEffect {
+	/* From https://css.glass */
+	background: rgba(126, 126, 126, 0.07);
+
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(13.4px);
+	-webkit-backdrop-filter: blur(13.4px);
+	border: 1px solid rgba(126, 126, 126, 0.04);
+}
+
+@mixin iconGlassEffect {
+	/* From https://css.glass */
+	background-image: var(--primary-gradient);
+
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(9.2px);
+	-webkit-backdrop-filter: blur(9.2px);
+	// border: 1px solid rgba(157, 151, 230, 0.02);
+}
+
+@mixin iconText {
+	/* From https://css.glass */
+	color: rgba(237, 242, 253, 0.72);
+}
+.nav__list {
+	width: var(--size-fluid-10);
+	margin-inline: auto;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+
+	border-radius: var(--radius-conditional-4);
+	padding-block: var(--size-1);
+	@include glassEffect;
+
+	.nav__item {
+		// border: 1px solid hotpink;
+
+		// color: white;
+		width: var(--size-fluid-3);
+		height: var(--size-fluid-3);
+		border-radius: 50%;
+		padding: var(--size-1);
+		transition: 200ms ease-in-out;
+		@include iconText;
+
+		&:hover {
+			transform: scale(1.25);
+			margin: 0.25rem;
+			border: 1px solid rgba(237, 242, 253, 0.72);
+			// color: white;
+			// background-color: #4b4b4b;
+			border-radius: 50%;
+			@include iconText;
+		}
+	}
+	.selected {
+		transform: scale(1.25);
+		margin: 0.25rem;
+		// border: 1px solid #4b4b4b;
+		@include iconText;
+		@include iconGlassEffect;
+		border-radius: 50%;
+	}
+}

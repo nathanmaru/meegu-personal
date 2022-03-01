@@ -1,0 +1,45 @@
+.page__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: var(--size-fluid-1);
+	.page__title {
+	}
+}
+
+.page__content {
+	.notification__list {
+		.notification {
+			border-top: 1px solid #e2e2e2;
+			width: 100%;
+			display: flex;
+			align-items: center;
+			gap: 20px;
+			padding: 0.5em 1em;
+
+			&__icon {
+			}
+
+			&__highlight {
+				font-weight: bold;
+			}
+
+			&__message {
+			}
+
+			&:hover {
+				color: var(--primary-color);
+				cursor: pointer;
+			}
+			&.active {
+				color: var(--primary-color);
+				// background-blend-mode: multiply;
+				// opacity: 0.35;
+			}
+		}
+
+		&:last-child {
+			border-bottom: 1px solid #e2e2e2;
+		}
+	}
+}

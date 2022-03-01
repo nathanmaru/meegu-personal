@@ -1,0 +1,16 @@
+.home {
+	padding-block: var(--size-fluid-1);
+	gap: 10px;
+}
+
+.chips {
+	margin-bottom: 10px;
+}
+
+@media screen and (min-width: 980px) {
+	.home {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 20px;
+	}
+}

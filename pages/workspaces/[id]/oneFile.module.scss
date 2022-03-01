@@ -1,0 +1,29 @@
+.page__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: var(--size-fluid-2);
+	.file__name__form {
+		flex-grow: 2;
+	}
+	.file__name {
+		width: 90%;
+		border: none;
+		padding: 0.25em;
+		font-size: var(--font-size-fluid-1);
+		font-weight: var(--font-weight-7);
+		white-space: nowrap;
+		overflow: hidden;
+		-o-text-overflow: ellipsis;
+		-ms-text-overflow: ellipsis;
+		text-overflow: ellipsis;
+	}
+}
+
+@media (min-width: 768px) {
+	.page__content {
+		display: grid;
+		grid-template-columns: 3fr 1fr;
+		gap: 2rem;
+	}
+}

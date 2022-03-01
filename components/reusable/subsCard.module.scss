@@ -1,0 +1,29 @@
+.card {
+	background: var(--gradient-7);
+	position: relative;
+	padding-inline: var(--size-fluid-1);
+	padding-block: var(--size-fluid-1);
+	border-radius: var(--radius-conditional-3);
+	box-shadow: var(--shadow-3);
+	overflow: hidden;
+	font-family: var(--font-sans);
+	transition: 300ms ease-in-out;
+	position: relative;
+
+	.card_action {
+		display: none;
+
+		& > *:not(:last-child) {
+			margin-right: var(--size-fluid-1);
+		}
+	}
+}
+
+.card_title {
+	font-size: 30px;
+}
+.card_subtitle {
+	color: rgb(43, 42, 42);
+	font-weight: 400;
+	margin-bottom: 10px;
+}

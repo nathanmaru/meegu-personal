@@ -1,0 +1,39 @@
+.profile {
+	position: relative;
+	width: 100%;
+	// height: 15rem;
+	border-radius: var(--radius-conditional-3);
+	overflow: hidden;
+	border: 1px solid #e2e2e2;
+
+	&__cover {
+		position: relative;
+		height: var(--size-fluid-7);
+		width: 100%;
+	}
+
+	&__img {
+		position: absolute;
+		top: 35%;
+		left: 2%;
+		z-index: 10;
+		height: 6rem;
+		width: 6rem;
+		border-radius: 50%;
+		overflow: hidden;
+		// border: 4px solid white;
+		// outline: 1px solid #e2e2e2;
+
+		&__img__circle {
+			position: relative;
+		}
+	}
+	&__info {
+		margin-block: var(--size-fluid-1);
+		margin-left: calc(6rem + 3%);
+	}
+}
+
+.profile__cover {
+	position: relative;
+}

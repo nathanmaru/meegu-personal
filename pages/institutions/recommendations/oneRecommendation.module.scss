@@ -1,0 +1,17 @@
+.page__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.page__content {
+	margin-top: var(--size-fluid-1);
+}
+
+@media (min-width: 768px) {
+	.page__content {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		gap: 1.5rem;
+	}
+}

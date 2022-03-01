@@ -1,0 +1,65 @@
+@mixin wrapper() {
+	width: min(100% - 2rem, 80rem);
+	margin-inline: auto;
+}
+
+@mixin sticky() {
+	position: sticky;
+	top: var(--size-fluid-1);
+}
+
+.pageContainer {
+	position: relative;
+	font-family: var(--font-sans);
+	font-size: var(--font-size-1);
+	min-height: 100vh;
+
+	.header {
+		@include wrapper;
+		// @include sticky;
+		// background-color: aqua;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-block: var(--size-fluid-1);
+
+		// .logo__wrapper {
+		// 	position: relative;
+		// 	// width: 10rem;
+		// 	// display: flex;
+		// 	// flex-direction: row;
+		// }
+
+		.logo {
+			// background-image: var(--primary-gradient);
+
+			// -webkit-background-clip: text;
+			// -webkit-text-fill-color: transparent;
+			margin: 0;
+			padding: 0;
+		}
+	}
+
+	.main {
+		@include wrapper;
+		// background-color: palegreen;
+		// min-height: 200vh;
+		margin-bottom: 200px;
+	}
+
+	.navigation {
+		@include wrapper;
+		position: fixed;
+
+		bottom: 20px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+.header__buttons {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 10px;
+}

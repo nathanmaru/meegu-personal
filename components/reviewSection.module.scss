@@ -1,0 +1,23 @@
+.review {
+	padding: 0.5em 0.5em;
+	display: flex;
+	gap: 10px;
+	border: 1px solid var(--white);
+	border-radius: var(--radius-conditional-2);
+	margin-right: 5px;
+
+	&__timeStamp {
+		font-size: 0.7rem;
+	}
+
+	&__author {
+		font-weight: bold;
+		font-size: 1.15rem;
+	}
+	&__content {
+		font-size: 0.95rem;
+	}
+
+	&__message {
+	}
+}
