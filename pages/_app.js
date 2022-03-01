@@ -7,6 +7,8 @@ import CircularProgress from '@mui/material/CircularProgress';
 import { DefaultSeo } from 'next-seo';
 import { UserProvider } from '../contexts/userProvider';
 import { SnackBarProvider } from '../contexts/useSnackBar';
+import '@react-pdf-viewer/core/lib/styles/index.css';
+import '@react-pdf-viewer/default-layout/lib/styles/index.css';
 import { PayPalScriptProvider } from '@paypal/react-paypal-js';
 
 import { themeOptions } from '../contexts/materialThemeProvider';
